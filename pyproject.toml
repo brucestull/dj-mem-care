@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dj-mem-care"
+version = "0.1.0"
+description = "Reusable Django app for dementia memory care: confabulations and (later) caring responses to them."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "brucestull" }]
+dependencies = ["Django>=4.2"]
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/brucestull/dj-mem-care"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dj_mem_care"]
